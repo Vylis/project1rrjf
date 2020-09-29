@@ -11,7 +11,6 @@
 .topnav {
   background-color: var(--dark-color);
   overflow: hidden;
-  width: 100%;
 }
 
 .topnav a {
@@ -39,7 +38,7 @@
   display: none;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 720px) {
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
     float: right;
@@ -47,7 +46,7 @@
   }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 720px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive a.icon {
     position: absolute;
