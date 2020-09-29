@@ -1,0 +1,52 @@
+:root {
+    --main-color: #69754D;
+    --background-color: #F4E8D8;
+    --first-color: #90986F;
+    --second-color: #D0C2A5;
+    --third-color: #A3B18A;
+    --light-color: #fefae0;
+    --dark-color: #161a1d;
+    
+}
+
+* {
+    list-style: none;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+}
+
+body {
+    font-family: 'David Libre', serif;
+}
+
+  .bottompage {
+    background-color: var(--main-color);
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: normal 16px sans-serif;
+    padding: 45px 50px;
+  }
+
+.footer-left {
+    color: var(--third-color);
+    font-size: 14px;
+    margin: 0;
+  }
+.link_footer {
+    color : var(--light-color);
+    text-decoration: none;
+  }
+  
+.footer-links {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--third-color);
+    margin: 0 0 10px;
+    padding: 0;
+    transition: ease .25s;
+  }
+  
