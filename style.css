@@ -8,6 +8,11 @@
     --dark-color: #161a1d;
 }
 
+*{
+  margin: 0;
+  padding: 0;
+}
+
 .topnav {
   background-color: var(--dark-color);
   overflow: hidden;
