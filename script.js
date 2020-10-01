@@ -1,3 +1,12 @@
+/* NAVBAR */
+
+let mainNav = document.getElementById('js-menu');
+let navBarToggle = document.getElementById('js-navbar-toggle');
+
+navBarToggle.addEventListener('click', function () {
+  mainNav.classList.toggle('menuToggle');
+});
+
 /* CARROUSEL */
 
 const imgCarrousel = document.getElementsByClassName('carrousel-img');
@@ -72,3 +81,5 @@ const autoPlay = () => {
 }
 
 autoPlay();
+
+
