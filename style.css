@@ -136,7 +136,7 @@
 }
 
 .fas:hover, .fa-play.active, .fa-pause.active {
-    color: var(--main-color);
+    color: var(--second-color);
     
 }
 
