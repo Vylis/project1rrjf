@@ -4,23 +4,73 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Timara Photographie</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
-      rel="stylesheet"/>
-    <link
-      href="https://fonts.googleapis.com/css2?family=David+Libre&display=swap"
-      rel="stylesheet"/>
-    <script src="https://kit.fontawesome.com/55141e066c.js"></script>
-
-  </head>
-  <body>
-    <header class="toppage"></header>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=David+Libre&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/55141e066c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <header class="toppage">
+        <nav class="navbar">
+            <span class="navbar-toggle" id="js-navbar-toggle">
+                <i class="fas fa-bars"></i>
+            </span>
+            <ul class="main-nav" id="js-menu">
+                <li class="toplist" id="active">
+                    <a href="#home" class="nav-links">Accueil</a>
+                </li>
+                <li class="toplist">
+                    <a href="#about" class="nav-links">À propos</a>
+                </li>
+                <li class="toplist">
+                    <a href="#prestations" class="nav-links">Prestations</a>
+                </li>
+                <li class="toplist">
+                    <a href="#galerie" class="nav-links">Galerie</a>
+                </li>
+                <li class="toplist">
+                    <a href="#contact" class="nav-links">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
     <main>
-      <section class="carrousel"></section>
+        <section class="carrousel" id="carrousel">
+            <div class="carrousel-container">
+                <img src="./img/photo-index-1.jpg" class="carrousel-img" id="slide-1" width="1500" height="600" alt="appareil photo">
+                <img src="./img/photo-index-2.jpg" class="carrousel-img" id="slide-2" width="1500" height="600" alt="photo mariés">
+                <img src="./img/photo-index-3.jpg" class="carrousel-img" id="slide-3" width="1500" height="600" alt="photo portrait femme">
+                <img src="./img/photo-index-4.jpg" class="carrousel-img" id="slide-4" width="1500" height="600" alt="photo ancienne">
+                <a class="carrousel-prev"><i class="fas fa-chevron-circle-left"></i></a>
+                <a class="carrousel-next"><i class="fas fa-chevron-circle-right"></i></a>
+                <div class="carrousel-controller">
+                    <span id="pause"><i class="fas fa-pause"></i></span>
+                    <span id="play"><i class="fas fa-play"></i></span>
+                </div>
+            </div>
+            <div class="logo">
+                <p class="logo-title"><span class="initial">T</span>imara</p>
+                <p class="logo-subtitle">Photographie</p>
+            </div>
+        </section>
 
-      <section class="presentation"></section>
+        <section class="presentation">
+            <div class="presentation-title">
+                <h2>
+                    Qui sommes-nous ?
+                </h2>
+            </div>
+            <div class="presentation-text">
+                <p>
+                    Basé sur Bordeaux, TIMARA Photographie réalise des photos d'identités conformes pour tous vos documents officiels, des portraits pour vos CV et vos réseaux sociaux,
+                    des portraits souvenirs (sans rendez-vous), des portraits de famille, d'enfant, de couple, de femmes enceintes (en studio, à domicile ou en extérieur).
+                    Nous proposons également nos services de photographes pour vos mariages, ainsi que des ateliers de retouches et de restaurations de photos anciennes.
+                    En outre, nous proposons aussi des créations de livres photos personnalisés et du développement de photos numériques ou argentiques !
+                </p>
+            </div>
+        </section>
 
       <section class="services"></section>
 
@@ -69,6 +119,8 @@
       </div>
       <div class="copyright"> <p class="copyright_text">Wilders &copy; Sep 2020</p> </div>
     </footer>
+      
     <script type="text/javascript" src="script.js"></script>
+      
   </body>
 </html>
