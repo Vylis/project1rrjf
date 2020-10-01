@@ -1,52 +1,193 @@
 :root {
-    --main-color: #69754D;
-    --background-color: #F4E8D8;
-    --first-color: #90986F;
-    --second-color: #D0C2A5;
-    --third-color: #A3B18A;
-    --light-color: #fefae0;
-    --dark-color: #161a1d;
-    
+  --main-color: #69754d;
+  --background-color: #f4e8d8;
+  --first-color: #90986f;
+  --second-color: #d0c2a5;
+  --third-color: #a3b18a;
+  --light-color: #fefae0;
+  --dark-color: #161a1d;
 }
 
 * {
-    list-style: none;
+  list-style: none;
+  text-decoration: none;
 }
 
 h1 {
-    font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
 }
-
 body {
-    font-family: 'David Libre', serif;
+  font-family: "David Libre", serif;
+  margin: 0;
 }
 
-  .bottompage {
-    background-color: var(--main-color);
-    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
-    box-sizing: border-box;
-    width: 100%;
-    text-align: left;
-    font: normal 16px sans-serif;
-    padding: 45px 50px;
+/* _______________ CSS CONTACT FORM ____________ */
+
+.contact_title {
+  margin-left: 20px;
+}
+#contactForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px 38%;
+}
+.form_message {
+  display: flex;
+  flex-direction: column;
+}
+.form_textarea {
+  margin-top: 5px;
+  border-radius: 8px;
+  border: 1px solid;
+  resize: none;
+}
+.form_input {
+  border-radius: 8px;
+  border: 1px solid;
+  width: 220px;
+  height: 25px;
+}
+.form_label {
+  color: var(--dark-color);
+  font-size: 18px;
+}
+.form_group {
+  margin-bottom: 15px;
+  justify-content: center;
+}
+.form_submit {
+  display: flex;
+  align-self: center;
+  margin-top: 20px;
+  padding: 8px 12px;
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  border-radius: 10px;
+}
+
+/* _______________ CSS FOOTER ____________ */
+
+.bottompage {
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: normal 16px sans-serif;
+  padding: 35px 40px;
+}
+.footer_right_center_left {
+  display: flex;
+  justify-content: space-around;
+}
+.footer_left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+.map {
+  display: none;
+}
+.footer.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.text_address {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.text_address .footer_link {
+  margin-bottom: 0;
+}
+.footer_right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+.footer_icon {
+  width: 18px;
+  height: 18px;
+}
+.icon_facebook {
+  fill: var(--dark-color);
+  transition: 0.5s ease;
+}
+.icon_facebook:hover {
+  fill: #4e76cb;
+}
+.footer_link {
+  color: var(--dark-color);
+  text-decoration: none;
+  font-size: 10px;
+  font-weight: bold;
+  padding: 0;
+  transition: ease 0.25s;
+}
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  font-size: 8px;
+}
+.copyright_text {
+  display: flex;
+  align-items: baseline;
+}
+.bottompage li {
+  height: 25px;
+}
+
+/* _______________ MEDIA CONTACT FORM ____________ */
+@media screen and (min-width: 992px) {
+  .contact_title {
+    margin-top: 20px;
+    margin-left: 40px;
+  }
+  .form_textarea {
+    margin-top: 8px;
+    width: 410px;
+    height: 64px;
+  }
+  .form_input {
+    width: 410px;
+    height: 32px;
+  }
+  /* _______________ MEDIA FOOTER ____________ */
+
+  .footer_left {
+    flex-direction: row;
+  }
+  .footer_right {
+    flex-direction: row-reverse;
+  }
+  .map {
+    display: flex;
+    flex-direction: center;
   }
 
-.footer-left {
-    color: var(--third-color);
+  .text_address {
+    display: none;
+  }
+  .footer_link {
+    font-size: 16px;
+  }
+  .footer_icon {
+    width: 40px;
+    height: 40px;
+  }
+  .copyright {
     font-size: 14px;
-    margin: 0;
   }
-.link_footer {
-    color : var(--light-color);
-    text-decoration: none;
+  .bottompage li {
+    height: auto;
+    padding: 15px;
   }
-  
-.footer-links {
-    font-size: 18px;
-    font-weight: bold;
-    color: var(--third-color);
-    margin: 0 0 10px;
-    padding: 0;
-    transition: ease .25s;
-  }
-  
+}
