@@ -1,11 +1,4 @@
-/* NAVBAR */
 
-let mainNav = document.getElementById('js-menu');
-let navBarToggle = document.getElementById('js-navbar-toggle');
-
-navBarToggle.addEventListener('click', function () {
-  mainNav.classList.toggle('menuToggle');
-});
 
 /* CARROUSEL */
 
@@ -81,13 +74,3 @@ const autoPlay = () => {
 }
 
 autoPlay();
-
-/* CONTACT FOOTER */
-
-const message = "Votre message est envoyé !";
-document
-  .getElementById("contactForm")
-  .addEventListener("submit", function (event) {
-    event.preventDefault();
-    alert(message);
-  });
