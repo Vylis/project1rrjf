@@ -56,16 +56,19 @@ let pauseIcon = document.querySelector('.fa-pause');
 
 // Clic bouton play
 document.getElementById('play').addEventListener('click', function(){
-    interval = setInterval(next, 5000);
-    playIcon.classList.add('active');
-    pauseIcon.classList.remove('active');
+    if (playIcon.classList.contains('active')) {
+        return;
+    }
+        playIcon.classList.add('active');
+        pauseIcon.classList.remove('active');
+        interval = setInterval(next, 5000);
 });
 
 // Clic bouton pause
 document.getElementById('pause').addEventListener('click', function(){
-    clearInterval(interval);
     playIcon.classList.remove('active');
     pauseIcon.classList.add('active');
+    clearInterval(interval); 
 });
 
 const autoPlay = () => {

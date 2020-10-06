@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home - Timara Photographie</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.0/css/all.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=David+Libre&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/55141e066c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     
 </head>
@@ -24,10 +24,10 @@
                     <a href="#about" class="nav-links">À propos</a>
                 </li>
                 <li class="toplist">
-                    <a href="#prestations" class="nav-links">Prestations</a>
+                    <a href="prestations.html" class="nav-links">Prestations</a>
                 </li>
                 <li class="toplist">
-                    <a href="#galerie" class="nav-links">Galerie</a>
+                    <a href="galerie.html" class="nav-links">Galerie</a>
                 </li>
                 <li class="toplist">
                     <a href="contact.html" class="nav-links">Contact</a>
@@ -39,10 +39,10 @@
     <main>
         <section class="carrousel" id="carrousel">
             <div class="carrousel-container">
-                <img src="./img/photo-index-1.jpg" class="carrousel-img" id="slide-1" width="1500" height="600" alt="appareil photo">
-                <img src="./img/photo-index-2.jpg" class="carrousel-img" id="slide-2" width="1500" height="600" alt="photo mariés">
-                <img src="./img/photo-index-3.jpg" class="carrousel-img" id="slide-3" width="1500" height="600" alt="photo portrait femme">
-                <img src="./img/photo-index-4.jpg" class="carrousel-img" id="slide-4" width="1500" height="600" alt="photo ancienne">
+                <img src="./img/photo-index-1.jpg" class="carrousel-img" id="slide-1" width="1600" height="600" alt="appareil photo">
+                <img src="./img/photo-index-2.jpg" class="carrousel-img" id="slide-2" width="1600" height="600" alt="photo mariés">
+                <img src="./img/photo-index-3.jpg" class="carrousel-img" id="slide-3" width="1600" height="600" alt="photo portrait femme">
+                <img src="./img/photo-index-4.jpg" class="carrousel-img" id="slide-4" width="1600" height="600" alt="photo ancienne">
                 <a class="carrousel-prev"><i class="fas fa-chevron-circle-left"></i></a>
                 <a class="carrousel-next"><i class="fas fa-chevron-circle-right"></i></a>
                 <div class="carrousel-controller">
@@ -51,15 +51,17 @@
                 </div>
             </div>
             <div class="logo">
+              <a href="index.html" title="Retour à l'accueil">
                 <p class="logo-title"><span class="initial">T</span>imara</p>
                 <p class="logo-subtitle">Photographie</p>
+              </a>
             </div>
         </section>
-
-        <section class="presentation">
+  
+        <section class="presentation" id="about">
+          <hr class="separation">
             <div class="presentation-title">
-                <h1>
-                    Atelier-Labo Photo - Timara Photographie
+                <h1>TIMARA PHOTOGRAPHIE<br><i class="subtitle">Atelier-Labo Photo</i>
                 </h1>
             </div>
             <div class="presentation-text">
@@ -70,10 +72,11 @@
                     En outre, nous proposons aussi des créations de livres photos personnalisés et du développement de photos numériques ou argentiques !
                 </p>
             </div>
+         
         </section>
-
+        <hr class="separation">  
         <section class="services">
-          <h2>Nos prestations</h2>
+          <h2>NOS PRESTATIONS</h2>
           <div class="container">
             <div class="card">
               <h3 class="card-heading">PHOTOS D'IDENTITE</h3>
@@ -85,34 +88,34 @@
                   <li class="card-list">visas,</li>
                   <li class="card-list">permis de conduire...</li>
                 </ul>
-                <p class="card-footer"><a href="prestations.html#id">Voir plus...</a></p>
               </div>
+              <div class="card-footer"><a href="prestations.html#photo-id">En savoir plus</a></div>
             </div>
             <div class="card">
               <h3 class="card-heading">LABO PHOTO ARGENTIQUE<br>ET NUMÉRIQUE</h3>
               <div class="card-body">
-                <p>Développement et tirages tous formats :</p> 
+                <p>Développement et tirages tout format :</p> 
                   <ul>
                     <li class="card-list">argentique et numérique,</li>
                     <li class="card-list">posters,</li>
                     <li class="card-list">montages sur toile,</li>
                     <li class="card-list">objets cadeaux...</li>
                   </ul>
-                  <p class="card-footer"><a href="prestations.html#labo">Voir plus...</a></p> 
               </div>
+              <div class="card-footer"><a href="prestations.html#labo-photo">En savoir plus</a></div> 
             </div>
             <div class="card">
               <h3 class="card-heading">ATELIER PHOTO & MULTIMEDIA</h3>
               <div class="card-body">
-                <p>Sauvegardez tous vos souvenirs de famille :</p>
+                <p>Sauvegardez vos souvenirs de famille :</p>
                   <ul>
                     <li class="card-list">Restauration de photos anciennes,</li>
-                    <li class="card-list">création-réalisation-édition de livres photos numériques,</li>
-                    <li class="card-list">montages photos tout format sur tout support pour la déco,</li>
+                    <li class="card-list">création-édition de livres photos numériques,</li>
+                    <li class="card-list">montages photos tout format,</li>
                     <li class="card-list">transfert vidéo sur DVD de vos archives de famille...</li>
                   </ul>
-                  <p class="card-footer"><a href="prestation.html#atelier">Voir plus...</a></p>  
               </div>
+              <div class="card-footer"><a href="prestations.html#atelier-photo">En savoir plus</a></div>  
             </div>
           </div>
         </section>
@@ -121,49 +124,21 @@
         
 
 
-    <footer class="bottompage">
-      <div class="footer_right_center_left">
-        <div class="left">
-          <ul class="footer_left">
-            <li><a class="footer_link" href="index.html">Accueil</a></li>
-            <li><a class="footer_link" href="#">À propos</a></li>
-            <li><a class="footer_link" href="#">Prestations</a></li>
-          </ul>
-
-          <ul class="footer_right">
-            <li><a class="icon_facebook" href="https://www.facebook.com/Timaraphoto/" target="_blank"><svg class="footer_icon" enable-background="new 0 0 512 512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="m512 256c0-141.4-114.6-256-256-256s-256 114.6-256 256 114.6 256 256 256c1.5 0 3 0 4.5-.1v-199.2h-55v-64.1h55v-47.2c0-54.7 33.4-84.5 82.2-84.5 23.4 0 43.5 1.7 49.3 2.5v57.2h-33.6c-26.5 0-31.7 12.6-31.7 31.1v40.8h63.5l-8.3 64.1h-55.2v189.5c107-30.7 185.3-129.2 185.3-246.1z" /></svg></a></li>
-            <li><a class="footer_link" href="contact.html">Contact</a></li>
-            <li><a class="footer_link" href="#">Galerie</a></li>
-          </ul>
-        
-          <ul class="footer_center">
-            <li class="footer_link"><i class="fas fa-map-pin"></i> 56 avenue Thiers</li>
-            <li class="footer_link">33100 Bordeaux</li>
-            <li><i class="fas fa-phone-alt fa-xs"></i><a class="footer_link" href="tel:+33556326513"> 05 56 32 65 13</a></li>
-          </ul>
+      <footer class="bottompage">
+        <ul class="footer">
+          <li><a class="footer_link" href="prestations.html">Prestations</a></li>
+          <li><a class="footer_link" href="contact.html">Contact</a></li>
+          <li><a class="icon_facebook" href="https://www.facebook.com/Timaraphoto/" target="_blank"><svg class="footer_icon" enable-background="new 0 0 512 512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="m512 256c0-141.4-114.6-256-256-256s-256 114.6-256 256 114.6 256 256 256c1.5 0 3 0 4.5-.1v-199.2h-55v-64.1h55v-47.2c0-54.7 33.4-84.5 82.2-84.5 23.4 0 43.5 1.7 49.3 2.5v57.2h-33.6c-26.5 0-31.7 12.6-31.7 31.1v40.8h63.5l-8.3 64.1h-55.2v189.5c107-30.7 185.3-129.2 185.3-246.1z" /></svg></a></li>
+        </ul>
+        <div class="bottom_footer">
+          <div class="copyright"><p>Wilders &copy; Sep 2020</p></div>
+          <div class="legal_mention"><a href="#">Mentions légales</a></div>
         </div>
-        <div class="right">
-          <div class="map" id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3">
-            <div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div><script>(function () {
-              let setting = {"height":150,"width":250,"zoom":17,"queryString":"Timara Photographe, Avenue Thiers, Bordeaux, France","place_id":"ChIJST0r_y4mVQ0RGxaF-jIX6OM","satellite":false,"centerCoord":[44.84239021579317,-0.5566966500000126],"cid":"0xe3e81732fa85161b","lang":"fr","cityUrl":"/france/bordeaux-18063","cityAnchorText":"Carte de Bordeaux, Sud de la France, France","id":"map-9cd199b9cc5410cd3b1ad21cab2e54d3","embed_id":"275679"};
-              let d = document;
-              let s = d.createElement('script');
-              s.src = 'https://1map.com/js/script-for-user.js?embed_id=275679';
-              s.async = true;
-              s.onload = function (e) {window.OneMap.initMap(setting)};
-              let to = d.getElementsByTagName('script')[0];
-              to.parentNode.insertBefore(s, to);
-            })();</script><a href="https://1map.com/fr/map-embed">1 Map</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="copyright"> <p class="copyright_text">Wilders &copy; Sep 2020</p> </div>
-    </footer>
+      </footer>
   </main>
     
     <script src="nav.js"></script>
-    <script type="text/javascript" src="script.js"></script>
+    <script src="carrousel.js"></script>
       
   </body>
 </html>
