@@ -381,6 +381,7 @@ color: rgb(160, 160, 160);
 background-color: var(--dark-color);
 font-size: .9rem;
 padding: 10px 0;
+margin-top: 50px;
 }
 .footer {
 display: flex;
