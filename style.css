@@ -322,55 +322,90 @@ font-size: 18px;
 }
 
 /* _______________ CSS CONTACT FORM ____________ */
-
+ 
+.form_full {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+}
+ 
+.front_picture {
+  width: 350px;
+  height: 250px;
+  padding: 15px;  
+}
+ 
+::placeholder {
+  font-size: 18px;
+  font-family: var(--mainFont);
+}
+ 
+.form_intel {
+  color: var(--dark-color);
+  text-decoration: none;
+  font-size: 16px;
+  padding: 30px;
+  transition: ease 0.25s;
+  display: flex;
+  flex-direction: column;
+}
+ 
+.form_link {
+  text-decoration: none;
+  color: var(--dark-color)
+}
+ 
 .form{
-margin-top: 50px;
+  margin-top: 50px;
+  padding: 15px;
 }
 .contact_title {
-margin: 35px;
-font-family: 'David Libre', serif;
-text-align: center;
+  margin: 35px;
+  font-family: 'David Libre', serif;
+  text-align: center;
 }
 #contactForm {
-display: flex;
-flex-direction: column;
-align-items: center;
-margin: 0px 38%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .form_message {
-display: flex;
-flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 .form_textarea {
-margin-top: 5px;
-border-radius: 8px;
-border: 1px solid;
-resize: none;
-width: 300px;
-height: 65px;
+  margin-top: 5px;
+  border-radius: 8px;
+  border: 1px solid;
+  resize: none;
+  width: 300px;
+  height: 65px;
 }
 .form_input {
-border-radius: 8px;
-border: 1px solid;
-width: 300px;
-height: 40px;
+  border-radius: 8px;
+  border: 1px solid;
+  width: 300px;
+  height: 40px;
 }
 .form_label {
-color: var(--dark-color);
-font-size: 18px;
+  color: var(--dark-color);
+  font-size: 18px;
 }
 .form_group {
-margin-bottom: 15px;
-justify-content: center;
+  margin-bottom: 5px;
+  justify-content: center;
 }
 .form_submit {
-display: flex;
-align-self: center;
-margin-top: 20px;
-padding: 8px 12px;
-background-color: var(--dark-color);
-color: var(--light-color);
-border-radius: 10px;
+  display: flex;
+  align-self: center;
+  margin-top: 20px;
+  padding: 8px 12px;
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  border-radius: 10px;
 }
 
 /* _______________ CSS FOOTER ____________ */
