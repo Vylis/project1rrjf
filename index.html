@@ -139,15 +139,18 @@
           <form id="contactForm">
  
             <div class="form_group">
-                <input class="form_input"type="text"id="first_name"placeholder="Nom"name="first_name"/>
+              <label for="name">Nom</label> <br>
+                <input class="form_input"type="text"id="name" name="name"/>
             </div>
  
             <div class="form_group">
-              <input class="form_input"type="email"id="email"placeholder="Mail"name="email"/>
+              <label for="email">Mail</label> <br>
+              <input class="form_input"type="email"id="email" name="email"/>
             </div>
  
             <div class="form_message">
-              <textarea id="message"placeholder="Message"class="form_textarea"></textarea>
+              <label for="message">Message</label>
+              <textarea id="message" class="form_textarea"></textarea>
             </div>
  
             <input class="form_submit" type="submit" value="Envoyer"/></form>
