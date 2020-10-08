@@ -1,5 +1,3 @@
-
-
 /* CARROUSEL */
 
 const imgCarrousel = document.getElementsByClassName('carrousel-img');
