@@ -1,40 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Timara Photographie</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Labo Studio Photo - Timara Photographie</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.0/css/all.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=David+Libre&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <header class="toppage">
-        
+        <nav class="navbar">
+            <span class="navbar-toggle" id="js-navbar-toggle">
+                <i class="fas fa-bars"></i>
+            </span>
+            <ul class="main-nav" id="js-menu">
+                <li class="toplist" id="active">
+                    <a href="index.html" class="nav-links">Accueil</a>
+                </li>
+                <li class="toplist">
+                    <a href="#about" class="nav-links">À propos</a>
+                </li>
+                <li class="toplist">
+                    <a href="prestations.html" class="nav-links">Prestations</a>
+                </li>
+                <li class="toplist">
+                    <a href="gallery.html" class="nav-links">Galerie</a>
+                </li>
+                <li class="toplist">
+                    <a href="#contact" class="nav-links">Contact</a>
+                </li>
+            </ul>
+        </nav>
     </header>
 
     <main>
-        <section class="carrousel">
 
+        <section class="carrousel" id="carrousel">
+            <div class="carrousel-container">
+                <img src="./img/photo-index-1.jpg" class="carrousel-img" id="slide-1" width="1600" height="600" alt="appareil photo">
+                <img src="./img/photo-index-2.jpg" class="carrousel-img" id="slide-2" width="1600" height="600" alt="photo mariés">
+                <img src="./img/photo-index-3.jpg" class="carrousel-img" id="slide-3" width="1600" height="600" alt="photo portrait femme">
+                <img src="./img/photo-index-4.jpg" class="carrousel-img" id="slide-4" width="1600" height="600" alt="photo ancienne">
+                <a class="carrousel-prev"><i class="fas fa-chevron-circle-left"></i></a>
+                <a class="carrousel-next"><i class="fas fa-chevron-circle-right"></i></a>
+                <div class="carrousel-controller">
+                    <span id="pause"><i class="fas fa-pause"></i></span>
+                    <span id="play"><i class="fas fa-play"></i></span>
+                </div>
+            </div>
+            <div class="logo">
+              <a href="index.html" title="Retour à l'accueil">
+                <p class="logo-title"><span class="initial">T</span>imara</p>
+                <p class="logo-subtitle">Photographie</p>
+              </a>
+            </div>
+        </section>
+  
+        <section class="presentation" id="about">
+
+          <hr class="separation">
+
+            <div class="presentation-title">
+                <h1>TIMARA PHOTOGRAPHIE<br><i class="subtitle">Atelier-Labo Photo</i>
+                </h1>
+            </div>
+            <div class="presentation-text">
+                <p>
+                    Basé sur Bordeaux, TIMARA Photographie réalise des photos d'identités conformes pour tous vos documents officiels, des portraits pour vos CV et vos réseaux sociaux,
+                    des portraits souvenirs (sans rendez-vous), des portraits de famille, d'enfant, de couple, de femmes enceintes (en studio, à domicile ou en extérieur).
+                    Nous proposons également nos services de photographes pour vos mariages, ainsi que des ateliers de retouches et de restaurations de photos anciennes.
+                    En outre, nous proposons aussi des créations de livres photos personnalisés et du développement de photos numériques ou argentiques !
+                </p>
+            </div>
         </section>
 
-        <section class="presentation">
-
-        </section>
+        <hr class="separation">  
 
         <section class="services">
-
+          <h2>NOS PRESTATIONS</h2>
+          <div class="container">
+            <div class="card">
+              <h3 class="card-heading">PHOTOS D'IDENTITE</h3>
+              <div class="card-body">
+                <p>En 5 mn, obtenez des photos d' identité conformes pour tout document officiel :</p>
+                <ul>
+                  <li class="card-list">carte d'identité,</li>
+                  <li class="card-list">passeport,</li>
+                  <li class="card-list">visas,</li>
+                  <li class="card-list">permis de conduire...</li>
+                </ul>
+              </div>
+              <div class="card-footer"><a href="prestations.html#photo-id">En savoir plus</a></div>
+            </div>
+            <div class="card">
+              <h3 class="card-heading">LABO PHOTO ARGENTIQUE<br>ET NUMÉRIQUE</h3>
+              <div class="card-body">
+                <p>Développement et tirages tout format :</p> 
+                  <ul>
+                    <li class="card-list">argentique et numérique,</li>
+                    <li class="card-list">posters,</li>
+                    <li class="card-list">montages sur toile,</li>
+                    <li class="card-list">objets cadeaux...</li>
+                  </ul>
+              </div>
+              <div class="card-footer"><a href="prestations.html#labo-photo">En savoir plus</a></div> 
+            </div>
+            <div class="card">
+              <h3 class="card-heading">ATELIER PHOTO & MULTIMEDIA</h3>
+              <div class="card-body">
+                <p>Sauvegardez vos souvenirs de famille :</p>
+                  <ul>
+                    <li class="card-list">Restauration de photos anciennes,</li>
+                    <li class="card-list">création-édition de livres photos numériques,</li>
+                    <li class="card-list">montages photos tout format,</li>
+                    <li class="card-list">transfert vidéo sur DVD de vos archives de famille...</li>
+                  </ul>
+              </div>
+              <div class="card-footer"><a href="prestations.html#atelier-photo">En savoir plus</a></div>  
+            </div>
+          </div>
         </section>
-
-        <section class="avis">
-
+        <hr class="separation"> 
+        <h2>NOUS CONTACTER</h2> 
+        <section class="form_full" id="contact">
+          <div class="form_picture">
+            <img src=https://www.pagesjaunes.fr/media/ugc/timara_photographe_03306300_221430652 class="front_picture" alt="picture of the shop front">
+          </div>
+          <div class="form_intel">
+            <ul>
+              <li class="form_link"><i class="fas fa-map-marker-alt"></i> 56 avenue Thiers</li>
+              <li><i class="fas fa-phone-alt fa-xs"></i><a class="form_link" href="tel:+33556326513"> 05 56 32 65 13</a></li>
+              <li><i class="form_link" class="fa fa-clock-o fa-xs" aria-hidden="true"></i> Horaires : <br> Semaine : 9h - 12h30 / 14h - 16h <br> Samedi : 9h - 12h30</li>
+            </ul>
+          </div>
+          <form id="contactForm">
+ 
+            <div class="form_group">
+                <input class="form_input"type="text"id="first_name"placeholder="Nom"name="first_name"/>
+            </div>
+ 
+            <div class="form_group">
+              <input class="form_input"type="email"id="email"placeholder="Mail"name="email"/>
+            </div>
+ 
+            <div class="form_message">
+              <textarea id="message"placeholder="Message"class="form_textarea"></textarea>
+            </div>
+ 
+            <input class="form_submit" type="submit" value="Envoyer"/></form>
         </section>
-    </main>
+        
+        <footer class="bottompage">
+          <ul class="footer">
+            <li><a class="footer_link" href="prestations.html">Prestations</a></li>
+            <li><a class="footer_link" href="#contact">Contact</a></li>
+            <li><a class="icon_facebook" href="https://www.facebook.com/Timaraphoto/" target="_blank"><svg class="footer_icon" enable-background="new 0 0 512 512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="m512 256c0-141.4-114.6-256-256-256s-256 114.6-256 256 114.6 256 256 256c1.5 0 3 0 4.5-.1v-199.2h-55v-64.1h55v-47.2c0-54.7 33.4-84.5 82.2-84.5 23.4 0 43.5 1.7 49.3 2.5v57.2h-33.6c-26.5 0-31.7 12.6-31.7 31.1v40.8h63.5l-8.3 64.1h-55.2v189.5c107-30.7 185.3-129.2 185.3-246.1z" /></svg></a></li>
+          </ul>
+          <div class="bottom_footer">
+            <div class="copyright"><p> <small>Wilders &copy; Sep 2020</small></p></div>
+            <div class="legal_mention"><p><small>Mentions légales</small></p></div>
+          </div>
+        </footer>
 
-    <footer class="bottompage">
+  </main>
+    
+    <script src="nav.js"></script>
+    <script src="carrousel.js"></script>
+    <script src="contact.js"></script>
+      
+  </body>
 
-    </footer>
-
-    <script type="text/javascript" src="script.js"></script>
-</body>
 </html>

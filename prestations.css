@@ -1,0 +1,137 @@
+.main-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-image img {
+    max-width: 100%;
+    height: auto;
+    min-height: 300px;
+    max-height: 600px;
+    object-fit: cover;
+}
+
+.logo {
+    background-color: rgba(555, 555, 555, .2);
+}
+
+article {
+    max-width: 1168px;
+    width: 100%;
+    margin: auto;
+    padding: 40px 16px 20px 16px;
+    text-align: center;
+ 
+}
+
+article p, article ul li{
+    font-size: 1.2em;
+    padding: 10px 0;
+    text-align: justify;
+}
+
+.row { 
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.col, .col-1 {
+    width: 100%;
+    padding: 8px 10px;
+}
+
+figure {
+    display: flex;
+    justify-content: center;
+}
+
+figure img {
+    vertical-align: middle;
+    max-width: 100%;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+#mariage {
+    margin-top: 32px;
+}
+
+.col-1 {
+    position: relative;
+    transition: all .5s ease-in-out;
+}
+
+.col-1:hover {
+    opacity: .75;
+}
+
+.mariage-img {
+    max-width: 1200px;
+    width: 100%;
+    align-self: center;
+    max-height: 200px;
+    height: auto;
+    object-fit: cover;
+}
+
+.photo-mariage-description {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: var(--light-color);
+    font-size: 2rem;
+    letter-spacing: 16px;
+    padding: 0;
+    text-shadow: 2.5px 1px var(--dark-color);
+}
+
+.form_full {
+    max-width: 1168px!important;
+    padding: 10px;
+}
+@media screen and (min-width: 768px) {
+    figure img {
+        width: 550px;
+        height: 550px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    article {
+        padding: 40px 0 20px 0;
+    }
+
+    .col {
+        width: 50%;
+        padding: 10px;
+    }
+
+    .col-1 {
+        padding: 10px;
+    }
+
+    .reverse{
+        flex-direction: row-reverse;
+    }
+
+    figure {
+        display: flex;
+        justify-content: flex-start;
+    }
+    
+    .row.reverse figure {
+        justify-content: flex-end;
+    }
+
+
+    .form_full {
+        justify-content: space-between!important;
+    }
+}
